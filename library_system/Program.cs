@@ -50,8 +50,9 @@ namespace library_system
 					Console.WriteLine("Enter the genre of the book:");
 					string genre = Console.ReadLine();
 
-
+                    
 					Book userBook = new Book(title, author, pages, genre);
+					Console.WriteLine(userBook.ToString());
 					bookList.Add(userBook);
 
 					break;
